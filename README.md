@@ -52,7 +52,8 @@ Clone the repo and enter the folder (commands not shown).
 Install Bundler, Foreman and Mailcatcher then Bundle:
 
 ```no-highlight
-gem install bundler foreman mailcatcher
+gem install bundler foreman
+gem install mailcatcher -- --with-cflags="-Wno-error=implicit-function-declaration"
 bundle
 ```
 
